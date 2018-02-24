@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+
+.body_connexion *{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.body_connexion{
+  background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+}
+
+
+
+.body_connexion > header > img{
+    width:400px;
+    margin:50px auto;
+    background-color:rgba(255,255,255,.1);
+    border-radius:20px;
+    display:block;
+}
+
+.page_connexion{
+    font: 95% 'Roboto', Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10% auto 0 auto;
+    padding: 16px;
+    background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+}
+
+.page_connexion #titre_principal{
+
+}
+
+.page_connexion h1{
+    background: gray;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+
+
+.page_connexion input[type="text"],
+.page_connexion input[type="password"]
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.page_connexion input[type="text"]:focus,
+.page_connexion input[type="password"]:focus
+{
+    box-shadow: 0 0 5px gray;
+    padding: 3%;
+    border: 1px solid grey;
+}
+
+.page_connexion input[type="submit"],
+.page_connexion input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: gray;
+    border-bottom: 2px solid grey;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+}
+.page_connexion input[type="submit"]:hover,
+.page_connexion input[type="button"]:hover{
+    background: #2EBC99;
+    cursor: pointer;
+}
+
+/*************** Bouton retour site ******************/
+.body_connexion .btn_connexion {
+    float:right;
+    margin-top:250px;
+    margin-right: 20px;
+  background: grey;
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.body_connexion .btn_connexion:hover {
+  background: grey;
+
+  text-decoration: none;
+    cursor: pointer;
+}

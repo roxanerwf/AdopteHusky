@@ -1,0 +1,49 @@
+html{
+  height: 100%;
+}
+
+.body_admin{
+    background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #5f796b, #3a4e59, #2f394e);
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', Arial;
+}
+
+
+.body_admin h2{
+    display:block;
+    margin-top:5%;
+    margin-bottom:50px;
+    text-align:center;
+    color:white;
+    font-weight: lighter;
+}
+
+
+.body_admin .button_admin{
+    width:50%;
+    margin:0 auto;
+    background-color:white;
+    padding:100px;
+    margin-bottom:50px;
+}
+
+.body_admin .btn {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: 'Roboto', Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: gray;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition:all 1s ease;
+    margin-left:50px;
+}
+
+.body_admin .btn:hover {
+  background: lightgray;
+  text-decoration: none;
+  color:black;
+}

@@ -1,0 +1,205 @@
+ /******* alternance float *****/
+
+            .article-box:nth-child(2n+1) {
+                page-break-after: always;
+                break-after: always;
+                -webkit-page-break-after:-webkit-always;
+                -webkit-break-after: -webkit-always;
+            }
+
+            html {
+              height: 100%;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            a {
+                text-decoration: inherit;
+            }
+
+            body {
+                padding: 50px;
+                background: url("images/bgtr.svg") top right no-repeat, url("images/bgbl.svg") bottom left no-repeat, url("images/overlay.png"), linear-gradient(45deg, #384955, #655361, #85505f);
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .container {
+                margin: 0 auto;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                display: -moz-flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                -webkit-justify-content: space-evenly;
+                -ms-justify-content: space-evenly;
+                justify-content: space-evenly;
+            }
+
+            .container>h1 {
+                color: white;
+                display: block;
+                width:100%;
+                text-align: center;
+                margin: 50px auto 100px auto;
+                flex: 1 auto;
+                font-weight: lighter;
+            }
+
+            .article-box {
+                display: block;
+                width: 450px;
+                margin: 0 5%;
+                margin-bottom: 50px;
+                background: gray;
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+            }
+
+            .article-box .image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            .article-box .title {
+                display: block;
+                background-color: #84577C;
+                color: rgba(0, 0, 0, 0.65);
+                font-size: 1.3em;
+                line-height: 1.5em;
+                text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+                font-family: Roboto Slab;
+                font-weight: normal;
+                position: relative;
+                padding: 15px;
+            }
+
+            .article-box>p {
+                background-image: linear-gradient(#e0eafc, #cfdef3);
+                padding: 15px;
+                overflow: auto;
+                height: 420px;
+                text-align: justify;
+            }
+
+
+
+            /* HR */
+
+            .article-box .divider {
+                display: block;
+                height: 10px;
+                border: 0;
+                margin: 0;
+            }
+
+
+
+
+            /* Bas de page */
+
+            .article-box .meta-cont {
+                display: block;
+                padding: 25px;
+                background: gray;
+            }
+
+            .article-box .meta-cont p,
+            .article-box .meta-cont a {
+                color: white;
+                font-weight: normal;
+                font-size: 14px;
+                border-radius: 5px;
+                transition: all 1s ease;
+            }
+
+            .article-box .meta-cont a:hover {
+                color: black;
+                font-weight: normal;
+                font-size: 18px;
+                background-color: white;
+                font-style: italic;
+                padding: 5px;
+                border-radius: 10px;
+            }
+
+            .article-box .meta-cont p i {
+                font-style: italic;
+                color: black;
+            }
+
+            .article-box .category-cont {
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+
+            .article-box .meta-cont .category-cont p {
+                display: block;
+                float: left;
+                margin: 0 1px 1px 0;
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 5px;
+                background: #84577C;
+                color: #fff;
+            }
+
+            /****************** Scroll bar modifié sur CHROME ************* /
+        /* Let's get this party started */
+
+            ::-webkit-scrollbar {
+                width: 12px;
+            }
+
+            /* Track */
+
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+
+            ::-webkit-scrollbar-thumb {
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                background: rgba(0, 0, 255, 0.8);
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            }
+
+            ::-webkit-scrollbar-thumb:window-inactive {
+                background: rgba(255, 0, 0, 0.4);
+            }
+
+            /* Let's get this party started */
+
+            ::-moz-scrollbar {
+                width: 12px;
+            }
+
+            /* Track */
+
+            ::-moz-scrollbar-track {
+                -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            /* Handle */
+
+            ::-moz-scrollbar-thumb {
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+                background: rgba(0, 0, 255, 0.8);
+                -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+            }
+
+            ::-moz-scrollbar-thumb:window-inactive {
+                background: rgba(0, 0, 255, 0.4);
+            }
